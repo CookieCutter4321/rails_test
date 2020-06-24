@@ -21,7 +21,7 @@
    font-family: 'Lato', cursive;
  }
 
- body, .navbar {
+  .home-callout, .navbar {
     //"Cool Sky" gradient provided by uiGradients
    background: #2980B9;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
@@ -30,4 +30,11 @@
 
  .navbar {
     border: none;
+ }
+
+
+ .home-callout {
+    margin-top: -20px;
+    padding-top: 50px;
+    padding-bottom: 100px;
  }
