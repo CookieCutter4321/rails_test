@@ -17,29 +17,35 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+ // Typography Styles
  h1, h2, h3 {
    font-family: 'Lato', cursive;
  }
 
-  .home-callout, .navbar {
+// Background Gradient
+.home-callout, .navbar {
     //"Cool Sky" gradient provided by uiGradients
    background: #2980B9;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
  }
 
+
  .navbar {
     border: none;
  }
 
- .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+ .navbar-default .navbar-nav > li > a, 
+ .navbar-default .navbar-brand {
   color: #535353;  
   font-size: 18px;
- }
- .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover{
-    color: #333;
+
+  &:hover {
+     color: #333;
+  }
  }
 
+//Home Page Styles
  .home-callout {
     margin-top: -20px;
     padding-top: 50px;
