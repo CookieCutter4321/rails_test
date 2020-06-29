@@ -23,10 +23,15 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
-# Use twitter bootstrap library for front-end UI and layout
+
 gem 'bootsnap', '>= 1.4.2', require: false
 
+# Use twitter bootstrap library for front-end UI and layout
 gem 'bootstrap-sass', '3.4.1'
+
+# Use Font Awesome sass gem for adding icons
+gem 'font-awesome-sass', '~> 5.13.0'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.4'
