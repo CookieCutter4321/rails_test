@@ -32,6 +32,9 @@ gem 'bootstrap-sass', '3.4.1'
 # Use Font Awesome sass gem for adding icons
 gem 'font-awesome-sass', '~> 5.13.0'
 
+# For Bootstrap JS
+gem "jquery-rails"
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.4'

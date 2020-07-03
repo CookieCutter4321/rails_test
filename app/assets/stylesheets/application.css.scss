@@ -9,9 +9,6 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
  */
 
  @import "bootstrap-sprockets";
@@ -41,6 +38,7 @@
     font-family: "Lato", sans-serif;
     font-weight: 800;
  }
+
  .navbar-default .navbar-nav > li > a, 
  .navbar-default .navbar-brand {
   color: #535353;  
@@ -51,9 +49,34 @@
   }
  }
 
-//Home Page Styles
+ .navbar-default .navbar-toggle .icon-bar {
+   background-color: white;
+}
+
+.navbar-default .navbar-toggle{
+   border: 2px solid white;
+
+   &:hover, &:focus {
+      background-color: rgb(38, 197, 255);
+   }
+}
+
+// Home Page Styles
+
  .home-callout {
     margin-top: -20px;
     padding-top: 50px;
     padding-bottom: 100px;
  }
+
+// Align about text
+
+#about-link {
+   margin-top: -20px;
+   margin-right: 20px;
+}
+
+#main-nav-collapse {
+   position: absolute;
+   right: 0px;
+}
