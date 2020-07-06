@@ -9,6 +9,8 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
+ *= require_tree .
+ *= require_self
  */
 
  @import "bootstrap-sprockets";
@@ -34,26 +36,28 @@
     border: none;
  }
 
+ .navbar-nav {
+    float:right;
+ }
+
+ 
  .navbar-brand {
     font-family: "Lato", sans-serif;
     font-weight: 800;
  }
-
- .navbar-default .navbar-nav > li > a, 
- .navbar-default .navbar-brand {
+ .navbar > div > ul > li > a, 
+ .navbar > .navbar-brand {
   color: #535353;  
-  font-size: 18px;
+  font-size: 20px;
 
   &:hover {
      color: #333;
   }
  }
 
- .navbar-default .navbar-toggle .icon-bar {
-   background-color: white;
-}
+ 
 
-.navbar-default .navbar-toggle{
+.navbar .navbar-toggler {
    border: 2px solid white;
 
    &:hover, &:focus {
@@ -69,14 +73,6 @@
     padding-bottom: 100px;
  }
 
-// Align about text
-
-#about-link {
-   margin-top: -20px;
-   margin-right: 20px;
-}
-
-#main-nav-collapse {
-   position: absolute;
-   right: 0px;
-}
+ .navbar-expand-md {
+    border-radius: 0px;
+ }
