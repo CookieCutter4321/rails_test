@@ -23,9 +23,15 @@
          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                <li class="nav-item active">
-               <%=link_to about_path, class: "navbar-brand" do %>
-                  About
-                <% end %>
+                  <%=link_to about_path, class: "navbar-brand" do %>
+                     About
+                  <% end %>
+
+                <li class="nav-item active">
+                  <%=link_to new_contact_path, class: "navbar-brand" do %>
+                     Contact Us
+                  <% end %>
+               </li>
                </li>
             </ul>
          </div>
