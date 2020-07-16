@@ -5,7 +5,7 @@
          <%= flash[:notice] %>
 
          <div class = "well">
-            <%= form_for @contact do |f|%>
+            <%= form_with model: @contact do |f|%>
 
                <div class = "form-group">
                   <%= f.label :name %>
